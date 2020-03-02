@@ -1,0 +1,246 @@
+    <!DOCTYPE html>
+<html lang="sw" xmlns="http://www.w3.org/1999/html" xmlns:font-family="http://www.w3.org/1999/xhtml"
+      xmlns:text-size="https://www.w3.org/1999/xhtml">
+<head>
+
+
+	<title>Ahbaabul Khairiya</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="cSLk7nX7C3v83IuWGgiVnPJhR8ZDGqKndGyTIOocI28" />
+    <meta property="fb:pages" content="#" />
+    <meta name="description" content ="Ahbaabul Khairiya, in abbreviation ‘AKH’ is an Islamic foundation (NGO) which deals with helping widowers and orphans who are living vulnerably life">
+    <link rel="stylesheet" href="style.css">
+    <script src="min.js"></script>
+    <link rel="canonical" href="#"/>
+    <script src="script.js"></script>
+    <link rel="icon" href="favicon2.JPG">
+</head>
+<body>
+<img src="banner.webp" width="100%" HEIGHT="100%" alt="webimage">
+<div id="justify">
+<nav class="clearfix">
+    <ul class="clearfix">
+        <li class='active'><a href='index.html'>Home</a></li>
+        <li><a href='About.html'>About</a></li>
+        <li><a href='activities.html'>Activities</a></li>
+        <li><a href='gallery.html'>Gallery</a></li>
+        <li><a href='contact.html'>Contact</a></li>
+
+    </ul>
+    <a href="#" id="pull">Menu</a>
+</nav>
+</div>
+<style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+    }
+</style>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <p>
+            <img src="image/3.png" style="width:40%" height="30%">
+            <img src="image/6.png" style="width:40%" height="30%">
+
+        </p>
+        <div class="text">Education</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="image/1.png" style="width:40%" height="30%">
+        <img src="image/2.png" style="width:40%" height="30%">
+        <div class="text">Charity</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <p>
+            <img src="image/4.png" style="width:40%" height="30%">
+            <img src="image/5.png" style="width:40%" height="30%">
+        </p>
+        <div class="text">Health</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<hr>
+<div w3-include-html="header2.html"></div>
+<script>
+    includeHTML();
+</script>
+
+<div id="disc">
+    <div class="row">
+        <h1 style="text-align:center; font-size: 70%; color: #5bc0de"><i><b>"Ahbaabul Khairiya"</b></i></h1>
+        <div class="column02">
+            <button class="button01 button4" style="text-align: center">
+                <h2 style="color: darkviolet; font-size: 240%; font-family: Pristina">WHO WE ARE</h2>
+                <p>
+                    Ahbaabul Khairiya, in abbreviation ‘AKH’ is an Islamic foundation (NGO) which deals with helping widowers, orphans, home bounded patients, and old people.
+                </p>
+            </button>
+        </div>
+        <div class="column02">
+            <button class="button01 button4" style="text-align: center">
+                <h2 style="color: darkviolet; font-size: 240%; font-family: Pristina">Our Mission</h2>
+                <p>
+                    Ahbaabul Khairiya dedicated to serving by organizing charity (SADAKA) to help the widows and orphaned children
+                </P>
+            </button>
+        </div>
+        <div class="column02">
+            <button class="button01 button4" style="text-align: center">
+                <h2 style="color: darkviolet; font-size: 240%; font-family:Pristina">Our Vision</h2>
+                <p>
+                    Ahbaabul Khairiya wants to be world class service provider in Tanzania. Our focus and strength is our poor widows and orphaned children to have daily needs.
+                </p>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div w3-include-html="footer2.html"></div>
+<script>
+    includeHTML();
+</script>
+<div w3-include-html="footer.html"></div>
+<script>
+    includeHTML();
+</script>
